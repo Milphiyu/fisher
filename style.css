@@ -1,0 +1,141 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-left: 30px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    margin-left: auto; /* Pushes the navigation to the right */
+    padding-right:50px ;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.25s ease;
+}
+
+nav ul:hover a {
+    color: #575757;
+}
+
+nav ul:hover a:hover {
+    color: #8EAAFB;
+    box-shadow: 0 2px 0 0 currentColor;
+}
+
+
+.Hello {
+    display: flex; /* Enables a flexbox layout */
+    align-items: center; /* Centers content vertically */
+    justify-content: space-between; /* Adds space between text and images */
+    padding: 50px; /* Adds spacing around the section */
+    background-color: #c5d2e7; /* Keeps the background color */
+    text-align: left; /* Aligns text to the left */
+}
+
+.Hello h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.Hello p {
+    font-size: 1.2em;
+    color: #444242;
+}
+
+.Hello-content {
+        flex: 1; /* Ensures this section takes up one part of the space */
+        text-align: left;
+        font-size: large;
+        word-wrap: break-word; /* Ensures words will break properly if necessary */
+        max-width: 400px; /* Optional: Limits the width of the text block */
+}
+
+.Hello-images {
+    flex: 1; /* Makes the image container take up one part of the space */
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Centers the images vertically */
+    gap: 10px; /* Adds space between images */
+}
+
+.Hello-images img {
+    width: 300px; /* Adjust image width */
+    height: 200px; /* Adjust image height */
+    object-fit: cover; /* Ensures images fit properly */
+    border-radius: 8px; /* Rounds image corners */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #575757;
+    transform: scale(1.05);
+}   
+.Hello-images {
+        display: flex;
+        justify-content: center; /* Centers the cards horizontally */
+        gap: 15px; /* Adds space between the cards */
+        padding: 10px;
+        align-items: center; /* Centers the cards vertically */
+        width: 100%; /* Ensures the container spans the page */
+        height: 250px; /* Adjusted height to accommodate larger images */
+    }
+    
+    .card {
+        flex: 0 0 auto; /* Ensures cards remain a fixed size */
+        width: 240px; /* Width of the cards */
+        height: 200px; /* Height of the cards */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden; /* Clips the content inside the card */
+        display: flex;
+        align-items: center; /* Centers content inside the card vertically */
+        justify-content: center; /* Centers content inside the card horizontally */
+        background-color: #f9f9f9; /* Light background for cards */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth hover animation */
+    }
+    
+    .card img {
+        width: 100%; /* Ensures the image spans the full width of the card */
+        height: 100%; /* Ensures the image spans the full height of the card */
+        object-fit: cover; /* Makes the image fit perfectly within the card */
+        border-radius: 8px; /* Matches the card's rounded corners */
+    }
+    
+    /* Hover Effect */
+    .card:hover {
+        transform: scale(1.1); /* Slightly enlarges the card on hover */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Deepens shadow on hover */
+    }
+    
